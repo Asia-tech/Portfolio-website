@@ -1,0 +1,130 @@
+/* Maximum width to 1280px  */
+@media screen and (max-width: 1280px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blck-sec{
+        margin-bottom: 6rem;
+    }
+}
+/* Maximum width to 1240px  */
+@media screen and (max-width: 1240px) {
+    html {
+        font-size: 60%;
+    }
+    .row {
+        padding: 0 8rem;
+    }
+    .container p{
+        font-size: 2rem;
+    }
+    .container .preview{
+        margin-bottom: 5rem;;
+    }
+    .container .preview img {
+        object-fit: cover;
+    }
+}
+
+/* Maximum width to 1110px  */
+@media screen and (max-width: 1110px) {
+    .container{
+        flex-direction: column-reverse;
+        max-width: 740%;
+      
+    }
+}
+
+/* Maximum width to 800px  */
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 55%;
+    }
+    .row {
+        padding: 0 4.5rem;
+    }
+
+    .banner h1{
+        font-size: 6.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .banner ul {
+        padding: 3.5rem 0;
+    }
+    .logo-section img {
+        height: 4rem;
+}
+}
+
+/* Maximum width to 600px  */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 52%;
+    }
+    body {
+        font-size: 2.2rem;
+    }
+    .row {
+        padding: 0 3rem;
+    }
+    section {
+        padding: 9rem 0px;
+    }
+    .banner h1{
+        font-size: 5.5rem;
+    }
+    .banner p{
+        font-size: 2.4rem;
+        padding-right: 1rem;
+    }
+    .container:not(:last-of-type){
+        margin-bottom: 15rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+}
+/* Maximum width to 460px  */
+@media screen and (max-width: 460px) {
+    .author-img{
+       
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    }
+/* Maximum width to 430px  */
+@media screen and (max-width: 430px) {
+.banner ul{
+    justify-content: space-between;
+    padding: 3rem 0;
+    width: 100%;
+}
+}
+/* Maximum width to 400px  */
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 50%;
+    }
+    body {
+        font-size: 2.1rem;
+    }
+    .banner p{
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+/* Maximum width to 320px  */
+@media screen and (max-width: 320px){
+    .btn{
+        font-size: 2rem;
+        padding: 0.7rem 2.2rem;
+    }
+}

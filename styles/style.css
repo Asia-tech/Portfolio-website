@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    --header1: 8.5rem;
+    --header2 : 6rem;
+    --header3 : 3.5rem;
+  }
+  
+  body {
+    font-family: "Jost", sans-serif;
+  }
+  
+  /*------ Reusable Component--------*/
+  .row{
+    margin: 0px auto;
+    max-width: 1160px;
+}
+
+  section{
+    padding: 12rem 0;
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: 2rem;
+  }
+  ul {
+    list-style: none;
+  }
+  img, video {
+    object-fit: contain;
+}
+  
+  /*------Headings--------*/
+  h1 {
+    font-size: var(--header1);
+  }
+  h2 {
+    font-size: var(--header2);
+  }
+  h2:after {
+    display: block;
+    height: 2px;
+    background-color:  black;
+    content: " ";
+    width: 12rem;
+    margin: 3rem auto 0;
+}
+  h1,h2,h3{
+    line-height: 1.1;
+    font-family: 'Jost' , sans-serif ;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: var(--header3);
+    font-weight: normal;
+  }
+ 
+  h4,
+  h5 {
+    font-size: 2.8rem;
+  }
+  
+/*------Links--------*/
+
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+.main-nav li a:link,
+.main-nav li a:visited {
+text-decoration: none;
+padding-bottom: 2px;
+font-size: 120%;
+border-bottom: 1px solid transparent;
+-webkit-transition: border-bottom 0.2s;
+transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+border-bottom: 1px solid #fff;
+}
+  
+  /*------Button--------*/
+  .btn{
+    
+   display: inline-block;
+   border: 1px solid;
+   font-size: 2.2rem;
+   padding: 0.8rem 3rem;
+   border-radius: 10rem;
+   box-shadow: 0 0.8rem 1.5rem #00000026;
+   transition: all 0.2s ease 0s;
+  }
+
+.banner btn{
+  margin-top: 2.5rem;
+  color: white;
+  border: 1px solid white;
+}
+.banner .btn:hover,
+.banner .btn:active{
+      background-color:white;
+      color: black;
+  }
+.btn--small{
+  font-size: 1.9rem;
+  padding: 0.3rem 2rem;
+}
+.btn--dark{
+  color: white;
+  background: black;
+  border: 1px solid black;
+}
+
+/*------------------------------*/
+ /*------ Header Section--------*/
+ /*------------------------------*/
+ .banner{
+    height: 100vh;
+    background: linear-gradient(rgba(0 ,0 ,0 ,0.9) ,rgba(0 ,0 ,0 ,0.9)),url(/images/background.jpg);
+    background-size: cover;
+    color: white;
+    background-position: top;
+    background-attachment: fixed;
+ }
+ 
+ .main-nav{
+     display: flex;
+     justify-content: flex-end; 
+ }
+
+ .main-nav ul{
+     display: flex;
+     padding: 5rem 0;    
+ }
+ .main-nav li{
+  margin-right: 6rem;
+  
+}
+ .main-nav li:not(:last-child){
+   margin-right: 4rem;
+ }
+ .banner .active {
+  text-shadow: 0 1px 0px rgb(0 0 0 / 45%);
+}
+
+ .text-box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+ }
+ .banner p{
+  font-size: 2.6rem;
+  margin: 2rem 0 2.5rem;
+}
+
+ /*------------------------------*/
+ /*------ Work Section--------*/
+ /*------------------------------*/
+.work-section .heading-underline:after{
+  margin: 2rem 0  ;
+  
+}
+ #work{
+   padding: 7rem 0;
+ }
+
+.container{
+  margin: 0 0 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  padding: 0px 48px 0px 0px;
+}
+.container p{
+  margin: 2rem 0;
+  max-width: 540px;
+}
+.container ul {
+  font-size: 80%;
+  list-style: initial;
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+.container .links{
+  display: flex;
+  align-items: center;
+}
+.container .githubmark {
+  display: block;
+  height: 2.6rem;
+  margin: 0 2rem;
+}
+.container .preview{
+  display: flex;
+  box-shadow: 0 1rem 5rem rgba(0, 0,  0, 25%);
+  transition: all 0.5s;
+}
+.container .preview img{
+  width: 100%;
+  height: 100%;
+}
+.container .preview:hover{
+transform: scale3d(1.025, 1.025, 1.025);
+}
+.container .in-view{
+transform: translateY(0);
+opacity: 1;
+}
+.container .repo {
+-webkit-transition: 0.2s;
+transition: 0.2s;
+}
+
+.container .repo:hover,
+.container .repo:focus {
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+ 
+.container:not(:last-of-type) {
+  margin-bottom: 20rem;
+}
+/*------------------------------*/
+ /*------ Logo Section--------*/
+ /*------------------------------*/
+ .logo-section{
+   border-top: 1px solid #eee;
+   text-align: center;
+   background: #F4F4F4;
+ }
+ 
+.logo-section .logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4.5rem;
+}
+.logo-section .logos img {
+  margin: 0 5rem;
+  margin-bottom:6rem;
+}
+.logo-section img {
+  height: 4.5rem;
+  max-width: 18rem;
+  filter: grayscale(1) opacity(0.6);
+  -webkit-filter: grayscale(1) opacity(0.6);
+}
+.logo-section .open-vsx {
+  max-width: 24rem;
+}
+.logo-section .ideacraft {
+  transform: scale(.95);
+}
+/*-----------------------------------*/
+ /*------ Testimonial Section--------*/
+ /*---------------------------------*/
+ .testimonials-section{
+  border-top: 1px solid #eee;
+  text-align: center;
+ }
+ 
+ .testimonials{
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .img-container img{
+    display: block;
+    margin: auto;
+    height: 13rem;
+    width: 13rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+ 
+ .blck-sec{
+  flex: 0 0 49%;
+  margin: 2.5rem 1rem;
+   max-width: 660px;
+   padding: 3rem;
+   font-size: 2rem;
+   border: 1px solid #ddd;
+   box-shadow: 0 1rem 2rem rgb(0 0 0 / 7%);
+   text-align: center;
+ }
+ .blck-sec .role{
+  margin: 0.5rem 0 1rem;
+ }
+ .blck-sec p{
+   text-align: left;
+ }
+/*------------------------------*/
+ /*------ About Section--------*/
+ /*------------------------------*/
+ #about{
+  padding: 7rem 0;
+}
+ .about-section{
+  border-top: 1px solid #eee;
+  text-align: center;
+  background: #F4F4F4;
+}
+.author-img{
+  max-width: 30rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  
+}
+.author-img img{
+  display: block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+ 
+ .about-section .contents {
+  max-width: 740px;
+  margin: 3rem auto;
+  padding: 4.5rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 7%);
+  background: #fff;
+  font-size: 2.1rem;
+}
+.about-section p{
+  margin-top: 3rem ;
+  text-align: left;
+}
+.about-section a{
+   text-decoration: none;
+    color: rgb(2, 105, 164);
+}
+/*------------------------------*/
+ /*------ Footer Section--------*/
+ /*------------------------------*/
+.footer-section{
+  padding: 7rem 0 5rem;
+    color: #c6d8d7;
+    background: #000;
+    text-align: center;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+.social-icon{
+  height: 3.5rem;
+    width: 3.5rem;
+}
+.autor-info{
+  padding-top: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 2.1rem;
+}
+.footer-section li:not(:last-child) {
+  margin-right: 5rem;
+}
